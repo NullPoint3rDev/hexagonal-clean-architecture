@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: hexagonal-clean-architecture
+
+server:
+  port: 8080
+
+# H2 for demo; replace with PostgreSQL for production
+spring.datasource:
+  url: jdbc:h2:mem:hexagonal;DB_CLOSE_DELAY=-1
+  driver-class-name: org.h2.Driver
+  username: sa
+  password:
+
+jpa:
+  hibernate:
+    ddl-auto: create-drop
+  show-sql: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: when-authorized
