@@ -94,7 +94,7 @@ flowchart TB
 ### Run locally
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/hexagonal-clean-architecture.git
+git clone https://github.com/NullPoint3rDev/hexagonal-clean-architecture.git
 cd hexagonal-clean-architecture
 ./gradlew bootRun
 ```
